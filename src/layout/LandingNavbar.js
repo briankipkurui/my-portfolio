@@ -1,5 +1,7 @@
 import {Outlet} from "react-router-dom";
-import Navbar from "../pages/Navbar";
+import Navbar from "../navbar/Navbar";
+import Home from "../home/Home";
+import About from "../about/About";
 
 const LandingNavbar = () => {
   return(
