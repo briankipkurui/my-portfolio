@@ -1,9 +1,7 @@
 import './Home.css'
 const Home =() =>{
     return(
-        <>
-        <h1 className='HomeH1'>AT HOME </h1>
-        </>
+        <h1 className='h'>AT HOME </h1>
     )
 }
 

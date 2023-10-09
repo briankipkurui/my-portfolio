@@ -1,18 +1,14 @@
+import React from 'react';
 import './App.css';
-import { Route, Routes } from "react-router-dom";
-import LandingNavbar from './layout/LandingNavbar';
-import About from './about/About';
+import Navbar from './components/navbar/Navbar';
+import Home from './slides/home/Home';
 
 function App() {
   return (
-    <Routes>
-      <Route path='/' element={<LandingNavbar />}>
-
-        <Route path="about" element={<About />} />
-      </Route>
-
-    </Routes>
-  );
+    <div>
+      <Navbar/>
+    </div>
+    );
 }
 
 export default App;
