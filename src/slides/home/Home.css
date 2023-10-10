@@ -1,4 +1,51 @@
-.h{
+
+.container {
     height: 100vh;
-    background-color: rgb(70, 54, 139);
-}
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 10px;
+    width: 90%;
+    margin: auto;
+  }
+  
+  .wording {
+    background-color: rgb(100, 94, 129);
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+  /* justify-content: center; 
+  align-items: center; */
+  }
+  
+  .my-photo {
+    background-color: rgb(110, 96, 173);
+  }
+  
+  .introduction {
+    background-color: rgb(116, 86, 47);
+    grid-area: introduction;
+  }
+  
+  .sub-introduction {
+    background-color: rgb(51, 39, 24);
+    grid-area: sub-introduction;
+  }
+  
+  .btn-column {
+    background-color: rgb(243, 200, 145);
+    grid-area: photo-btn;
+  }
+  
+  @media only screen and (max-width: 550px) {
+    .container {
+      grid-template-columns: 1fr;
+      grid-template-rows: 1fr 1fr;
+      grid-template-areas:
+      "introduction"
+      "sub-introduction"
+      "photo-btn"
+      "photos";
+    }
+  
+  }
+  

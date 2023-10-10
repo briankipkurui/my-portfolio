@@ -1,8 +1,6 @@
 import React from 'react';
 import './App.css';
 import Navbar from './components/navbar/Navbar';
-import Home from './slides/home/Home';
-
 function App() {
   return (
     <div>
