@@ -28,3 +28,125 @@ ul li a{
 ul li a:hover{
   margin-top: 20px;
 }
+
+
+
+/* Navbar styles */
+.navbar1 {
+  background-color:white;
+  color:white;
+  position: fixed;
+  height: 80px;
+  top: 0;
+  left: 0;
+  width: 100%;
+  border-bottom: 1px solid #333;
+  /* z-index: 1000; */
+}
+
+.navbar1-conatiner{
+  display: flex;
+  gap: 20px;
+  align-items:self-end;
+  margin-left: 40px;
+
+}
+.logo-logo{
+  color: purple;
+  font-family: 'Open Sans';
+  font-weight: 500;
+  font-size: 20px;
+}
+.ul-el{
+  margin-top: 20px;
+  font-family: 'Open Sans';
+  font-size: 20px;
+  line-height: 20px;
+  color: purple;
+}
+
+
+
+/* Reset some default styles */
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+}
+
+/* Navbar styles */
+.navbar {
+  background-color: white;
+  color: black;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1000;
+  margin-top: 80px;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px 20px;
+}
+
+.logo {
+  font-size: 24px;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  margin: 0;
+  padding: 0;
+}
+
+.nav-links li {
+  margin-right: 20px;
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: black;
+}
+
+/* Hamburger menu styles for mobile */
+.burger {
+  display: none;
+  flex-direction: column;
+  cursor: pointer;
+}
+
+.line {
+  width: 30px;
+  height: 3px;
+  background-color: white;
+  margin: 4px 0;
+}
+
+/* Media query for mobile responsiveness */
+@media screen and (max-width: 768px) {
+  .nav-links {
+      display: none;
+      flex-direction: column;
+      position: absolute;
+      background-color: #333;
+      top: 60px;
+      left: 0;
+      width: 100%;
+      padding: 10px 0;
+  }
+
+  .nav-links.active {
+      display: flex;
+  }
+
+  .burger {
+      display: flex;
+  }
+}
+
+
+
